@@ -10,10 +10,7 @@ export const Tabs: React.FC = () => {
       <div className="tabs is-boxed">
         <ul>
           {tabs.map(tab => (
-            <li
-              key={tab.id}
-              className={tabId === tab.id ? 'is-active' : ''}
-            >
+            <li key={tab.id} className={tabId === tab.id ? 'is-active' : ''}>
               <Link to={`/tabs/${tab.id}`}>{tab.title}</Link>
             </li>
           ))}

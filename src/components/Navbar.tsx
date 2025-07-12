@@ -12,7 +12,11 @@ export const Navbar: React.FC = () => {
             <li className={location.pathname === '/' ? 'is-active' : ''}>
               <Link to="/">Home</Link>
             </li>
-            <li className={location.pathname.startsWith('/tabs') ? 'is-active' : ''}>
+            <li
+              className={
+                location.pathname.startsWith('/tabs') ? 'is-active' : ''
+              }
+            >
               <Link to="/tabs">Tabs</Link>
             </li>
           </ul>
